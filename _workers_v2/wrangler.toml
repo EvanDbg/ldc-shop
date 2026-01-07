@@ -1,12 +1,14 @@
 name = "ldc-shop-v2"
 main = "worker.js"
 compatibility_date = "2026-01-06"
-
-# Custom Domain
-routes = [
-	{ pattern = "shop.example.com", custom_domain = true }
-]
-
+ 
+# Custom Domain (Optional)
+# If you want to use a custom domain, uncomment the lines below and replace "shop.example.com" with your own domain (e.g., "store.yourdomain.com").
+# If you don't need a custom domain (using *.workers.dev), keep these lines commented out.
+# routes = [
+# 	{ pattern = "shop.example.com", custom_domain = true }
+# ]
+ 
 # D1 Database Binding
 [[d1_databases]]
 binding = "DB"
